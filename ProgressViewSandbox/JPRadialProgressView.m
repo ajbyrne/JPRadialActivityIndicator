@@ -69,12 +69,12 @@ void NLDrawPieChartProgressGraph(CGContextRef context, CGPoint center, CGFloat r
 	//End drawing!
 }
 
-- (void) setProgress:(float) newProgress {
+- (void) setProgress:(CGFloat) newProgress {
 	progress = newProgress;
 	[self setNeedsDisplay];
 }
 
-- (float) progress {
+- (CGFloat) progress {
 	return progress;
 }
 
